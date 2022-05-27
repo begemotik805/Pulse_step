@@ -8,6 +8,7 @@ const cleanCSS = require('gulp-clean-css');
 // Static server
 gulp.task('server', function () {
     browserSync.init({
+        browser: ["firefox"],
         server: {
             baseDir: "src"
         }
