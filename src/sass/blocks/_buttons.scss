@@ -8,6 +8,14 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
+    transition: 0.25s all;
+    &:hover {
+        box-shadow: -3px 3px 8px 0px rgba(0, 0, 0, 0.2) inset;
+        background-color: lighten($color: $main-color, $amount: 8%);
+    }
+    &:focus {
+    outline: none;
+    }
 
     &-main {
         width: 300px;
